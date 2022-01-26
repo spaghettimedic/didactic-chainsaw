@@ -1,5 +1,5 @@
 {
-  "name": "just-tech-news",
+  "name": "the-tech-blog",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spaghettimedic/just-tech-news.git"
+    "url": "git+https://github.com/spaghettimedic/didactic-chainsaw.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/spaghettimedic/just-tech-news/issues"
+    "url": "https://github.com/spaghettimedic/didactic-chainsaw/issues"
   },
-  "homepage": "https://github.com/spaghettimedic/just-tech-news#readme",
+  "homepage": "https://github.com/spaghettimedic/didactic-chainsaw#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
