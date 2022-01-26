@@ -11,13 +11,3 @@ test('format_plural() returns a word with an "s" at the end if there are more th
   expect(format_plural('lion', 1)).toBe('lion');
   expect(format_plural('tiger', 2)).toBe('tigers');
 });
-
-test('format_url() returns a simplified url string', () => {
-  const url1 = 'http://test.com/page/1';
-  const url2 = 'https://www.coolstuff.com/abcdefg/';
-  const url3 = 'https://www.google.com?q=hello';
-
-  expect(format_url(url1)).toBe('test.com');
-  expect(format_url(url2)).toBe('coolstuff.com');
-  expect(format_url(url3)).toBe('google.com');
-});

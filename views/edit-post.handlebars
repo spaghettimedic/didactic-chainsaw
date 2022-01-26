@@ -4,7 +4,7 @@
   <form class="edit-post-form">
     <div>
       <input type="text" name="post-title" value="{{post.title}}" />
-      <span>({{format_url post.post_url}})</span>
+      <input type="text" name="post-body" value="{{post.post_body}}" />
     </div>
     <div>
       Posted by you on {{format_date post.created_at}}

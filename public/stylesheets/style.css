@@ -36,6 +36,10 @@ button:hover {
   background-color: #3486eb;
 }
 
+#logout {
+  margin-left: 0%;
+}
+
 .post-list {
   margin: 0;
   padding: 0;
