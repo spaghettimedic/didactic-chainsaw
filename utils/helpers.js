@@ -1,6 +1,10 @@
+const { Post } = require('../models');
+
+const router = require('express').Router();
+
 module.exports = {
   format_date: date => {
-    return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(date).getFullYear()} at ${new Date(date).getHours()}:${new Date(date).getMinutes()}`;
+    return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(date).getFullYear()}`;
   },
   format_plural: (word, amount) => {
     if (amount !== 1) {
@@ -8,13 +12,5 @@ module.exports = {
     } else {
       return word;
     };
-  },
-  format_url: url => {
-    return url
-      .replace('http://', '')
-      .replace('https://', '')
-      .replace('www.', '')
-      .split('/')[0]
-      .split('?')[0];
   }
 };

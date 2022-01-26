@@ -80,4 +80,12 @@ router.get('/edit/:id', withAuth, (req, res) => {
   });
 });
 
+router.get('/new-post', (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  res.render('new-post');
+});
+
 module.exports = router;

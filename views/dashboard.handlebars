@@ -1,32 +1,17 @@
-<section>
-  <h2>Create New Post</h2>
-
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title">
-    </div>
-    <div>
-      <label for="post-body">Post body</label>
-      <textarea id="post-body" name="post-body" placeholder="Share your thoughts and/or links!"></textarea>
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
+<a href="/dashboard/new-post" class="edit-link fs-4">Create New Post</a>
 
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
-  <ol>
+  <div>
     {{#each posts as |post|}}
-    <li>
+    <div>
       {{> post-info post}}
       <br>
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link ms-2">Edit post</a>
+    </div>
+    <br>
     {{/each}}
-  </ol>
+  </div>
 </section>
 {{/if}}
-
-<script src="/javascript/add-post.js"></script>

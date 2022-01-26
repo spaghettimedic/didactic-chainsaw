@@ -1,13 +1,14 @@
-<div class="col-12 col-md-4">
+<div class="col-12 col-md-12">
   <div class="title card">
     <div class="card-header">
-      <a href="{{post_body}}" target="_blank">{{title}}</a>
-      <span class="float-right">{{post_body }}</span>
+      <a href="/post/{{id}}">{{title}}</a>
+      <span class="float-end">Posted by <span class="fw-bold">{{user.username}}</span> on {{format_date created_at}}</span>
     </div>
-  </div>
-  <div class="meta">
-    Posted by {{user.username}} on {{format_date created_at}}
-    |
-    <a href="/post/{{id}}">{{comments.length}} {{ format_plural "comment" comments.length }}</a>
+    <div class="card-body">
+      <p class="card-text">{{post_body}}</p>
+    </div>
+    <div class="meta card-footer">
+      <a href="/post/{{id}}">{{comments.length}} {{ format_plural "comment" comments.length }}</a>
+    </div>
   </div>
 </div>
